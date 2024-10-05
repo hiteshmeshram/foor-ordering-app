@@ -3,7 +3,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <>
+    <div className='hidden md:block'>
       <div className="div bg-zinc-100 py-3 mt-20">
         <div className="top max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
           <div className="first flex flex-col sm:flex-row justify-between items-center">
@@ -57,7 +57,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

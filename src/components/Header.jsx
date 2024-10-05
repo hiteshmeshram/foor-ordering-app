@@ -9,7 +9,7 @@ const isOnline=useIsOnline();
 const items=useSelector((store)=>store.cart.items)
 
     return (
-        <div className="flex  justify-between w-58  border-b shadow-md" >
+        <div className="md:flex  md:justify-between w-58  md:border-b md:shadow-md md:block hidden" >
             <div onClick={()=>{
                 window.location.href = '/'
             }} className="m-2 mx-24">

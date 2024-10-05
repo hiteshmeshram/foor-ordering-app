@@ -23,7 +23,7 @@ const Cart = () => {
   )
   return  (
     <div className="">
-      <div className='w-1/3 border border-gray-500 shadow-2xl rounded-xl m-4'>
+      <div className='w-full md:w-1/3 border border-gray-500 shadow-2xl rounded-xl m-4 md:m-4'>
         {cartItems.map((item)=>{
           return <div className='m-4 flex justify-between '>
             <div>
@@ -31,15 +31,15 @@ const Cart = () => {
           <h4>₹{item?.card?.info?.price/100 || item?.card?.info?.defaultPrice/100}</h4>
           </div>
           <div>
-          <button className='bg-green-200 px-4 py-1 rounded-xl' onClick={()=>{
+          <button className='bg-green-200 px-4 py-1 rounded-xl w-full md:block' onClick={()=>{
             removeItems();
           }}>remove</button></div>
           </div>
          
         })}
       </div>
-      <div className='m-4 bg-green-200 border border-b w-1/3 shadow-2xl'>
-        <h2 className='font-bold my-2 px-4'>To pay -₹{total/100} </h2>
+      <div className='m-4 bg-green-200 border border-b md:w-1/3 w-full shadow-2xl'>
+        <h2 className='font-bold text-center my-2 px-4'>To pay -₹{total/100} </h2>
       </div>
       
     </div>

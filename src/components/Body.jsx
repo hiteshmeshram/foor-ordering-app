@@ -50,19 +50,21 @@ const Body=()=>{
         )
     }
     return (
-        <div>
-            <div className="m-4 flex justify-center pt-2">
-                <input type="text"
-                  onChange={(e)=>{
-                    setSearchText(e.target.value);
-                    
-                }} placeholder="search for Restaurants" className="border border-gray-300 px-4 focus:border-gray-300 rounded-lg mr-2"></input>
-                <button onClick={ ()=>{
-                    const data=filterRestaurants(searchText,allRestaurants);
-                    setFilteredRestaurants(data);
+        <div className=" ">
+            <div className="m-4  md:flex md:justify-center pt-2 ">
+                <div className="">
+                    <input type="text"
+                    onChange={(e)=>{
+                        setSearchText(e.target.value);
+                        
+                    }} placeholder="search for Restaurants" className=" border border-gray-300 px-4 focus:border-gray-300 rounded-lg mr-2"></input>
+                    <button onClick={ ()=>{
+                        const data=filterRestaurants(searchText,allRestaurants);
+                        setFilteredRestaurants(data);
 
-                } } className="bg-green-100 font-semibold rounded-lg px-2 py-1">Search</button>
-                <button  className="border border-gray-300 mx-24 bg-green-100 font-semibold rounded-lg py-1 px-4" onClick={()=>{
+                    } } className="bg-green-100 font-semibold rounded-lg px-2 py-1">Search</button>
+                </div>
+                <button  className="  mt-2  border border-gray-300 md:mx-24 bg-green-100 font-semibold rounded-lg py-1 px-4" onClick={()=>{
                     const data=topRestaurant(allRestaurants);
                     setFilteredRestaurants(data);
                 }}>Top Rated Restaurants</button>

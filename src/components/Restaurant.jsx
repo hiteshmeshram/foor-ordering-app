@@ -40,13 +40,13 @@ const Restaurant = () => {
    
   return (
     <div className=' flex justify-center items-center flex-col '>
-        <div className='w-1/2 border border-gray-400 m-4 pb-4 shadow-2xl shadow-slate-300 rounded-3xl mb-6'>
+        <div className='w-screen  md:w-1/2  border border-gray-400 md:m-4 md:pb-4 shadow-2xl shadow-slate-300 rounded-3xl md:mb-6'>
             <h1 className='font-bold text-2xl m-4 p-2'>{name}</h1>
             <h3 className='mx-4 font-bold '>⭐ {avgRating}   -{costForTwoMessage}</h3>
             <h3 className='mx-5  text-red-500'>{cuisines.join(",")}</h3>
-      </div>
+        </div>
     {resMenu &&
-    <div className='w-1/2  rounded-2xl shadow-md'>
+    <div className='w-screen md:w-1/2  rounded-2xl shadow-md'>
           <h1 className='m-4 font-bold text-2xl'>Menu</h1>
         
             
