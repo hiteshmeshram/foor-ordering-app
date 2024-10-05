@@ -15,3 +15,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## 🛠️ Technologies Used
 
 - **Frontend:** React.js, Tailwind CSS
+
+- ## To run
+- make sure cors is enabled in chrome you can download cors extension and then enable it to see all the restaurants
